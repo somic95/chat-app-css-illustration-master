@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+h3 {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+section {
+    width: 50%;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 100vh;
+}
+
+/* start background section */
+.bg {
+    width: 690px;
+    height: 850px;
+    background: linear-gradient(45deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    position: absolute;
+    z-index: 1;
+    left: -5%;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.bg2 {
+    width: 690px;
+    height: 850px;
+    background-color: hsl(270, 20%, 96%);
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+    right: -5%;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+/* end background section */
+
+.device-wrap {
+    margin-left: 30rem;
+    margin-right: 5rem;
+    width: 300px;
+    min-width: 300px;
+    height: 640px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 20px #bbb;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.left-arrow,
+.dot {
+    filter: invert();
+}
+
+/* start user profile area */
+.device-wrap .top-part {
+    background: linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    width: 95%;
+    height: 100px;
+    border-radius: 30px 30px 0 0;
+    margin: 0.5rem 0 0 0.5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.top-part .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin-left: 0.5rem;
+}
+
+.top-part .left-arrow  {
+    width: 20px;
+    height: 20px;
+}
+
+.top-part .dot {
+    float: right;
+    transform: translateX(220%);
+}
+
+.top-part p {
+    color: hsl(276, 100%, 81%);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.top-part-txt {
+    padding-left: 1rem;
+    line-height: 1.5;
+}
+
+.notch {
+    content: "";
+    width: 170px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0 0 20px 20px;
+}
+/* end user profile area */
+
+/* start chat area */
+.inchat-part {
+    width: 95%;
+    height: 525px;
+    margin-left: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 0 0 20px 20px;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.chat-wrap {
+    margin: 0.5rem 0.5rem;
+}
+
+.left-typing {
+    width: 60%;
+}
+
+.left-typing p {
+    font-size: 10px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(273, 22%, 92%);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+
+.left-typing:nth-child(3) {
+    margin-top: 2rem;
+}
+
+.right-typing {
+    width: 50%;
+    color: hsl(271, 15%, 43%);
+    transform: translateX(100%);
+}
+
+.right-typing .img-dog {
+    margin-top: 2rem;
+    display: flex;
+    gap: 10px;
+    transform: translateX(-29%);
+}
+
+.img-dog img {
+    width: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.right-typing p {
+    margin-top: 0.5rem;
+    font-size: 10px;
+    color: rgb(83, 83, 83);
+    background-color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(227, 227, 227);
+}
+
+.promo-chat {
+    background: linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    width: 70%;
+    margin-top: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    color: white;
+    border-radius: 15px 15px 15px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.promo-chat input {
+    margin-left: 0.5rem;
+}
+
+.promo-chat .custom-radio {
+    opacity: 0.5;
+}
+
+.promo-chat p {
+    font-size: 10px;
+    padding-left: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.promo-chat span {
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+.promo-chat .promo-span {
+    padding-left: 3.2rem;
+}
+
+.btn {
+    border: none;
+    margin-top: 1.25rem;
+    width: 100%;
+    border-radius: 30px;
+    padding: 0.6rem 2rem;
+}
+
+.btn::placeholder {
+    color: hsl(206, 6%, 79%);
+    font-size: 10px;
+}
+
+.msg img {
+    width: 33px;
+    height: 33px;
+    rotate: 180deg;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0.5rem;
+    filter: invert();
+    transform: translate(-700%, 108%);
+}
+/* end chat area */
+
+/* start simple booking txt section */
+.detail-txt {
+    padding-left: 2rem;
+    padding-right: 30rem;
+    z-index: 2;
+}
+
+.detail-txt h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+}
+
+.detail-txt p {
+    color: hsl(270, 7%, 64%);
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+/* end simple booking txt section */
+
+@media (max-width: 1280px) {
+
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .bg {
+        width: 480px;
+        height: 500px;
+        background: linear-gradient(45deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+        position: absolute;
+        z-index: 1;
+        left: -50%;
+        top: 0;
+        border-radius: 0 0 50% 50%;
+    }
+    
+    .bg2 {
+        display: none;
+    }
+
+    .device-wrap {
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        width: 300px;
+        min-width: 300px;
+        height: 650px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0px 5px 20px #bbb;
+        z-index: 2;
+        background-color: #fff;
+    }
+
+    .inchat-part {
+        width: 95%;
+        height: 82%;
+        margin-left: 0.5rem;
+        padding-top: 0.5rem;
+        border-radius: 0 0 20px 20px;
+        background-color: hsl(270, 20%, 96%);
+    }
+
+    .detail-txt {
+        text-align: center;
+        padding: 0 5rem;
+        z-index: 2;
+    }
+
+    .detail-txt p {
+        color: hsl(270, 7%, 64%);
+        margin-top: 2rem;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+    }
+}
+
+
